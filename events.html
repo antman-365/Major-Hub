@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Events | Major Hub</title>
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="events.html" aria-current="page">Events</a>
+    <a href="dining.html">Dining &amp; Weather</a>
+    <a href="planner.html">Study Planner</a>
+  </nav>
+
+  <main>
+    <h1>Campus Events</h1>
+    <p>Browse sample events for the Major Hub demo.</p>
+
+    <!-- JavaScript uses the selected category to filter these cards. -->
+    <label for="event-filter">Filter by category</label>
+    <select id="event-filter">
+      <option value="all">All events</option>
+      <option value="social">Social</option>
+      <option value="academic">Academic</option>
+    </select>
+
+    <article data-category="social">
+      <h2>Game Night</h2>
+      <p>Friday at 7 p.m. · Student Center</p>
+    </article>
+
+    <article data-category="academic">
+      <h2>Group Study Session</h2>
+      <p>Wednesday at 5 p.m. · Library</p>
+    </article>
+  </main>
+</body>
+</html>
