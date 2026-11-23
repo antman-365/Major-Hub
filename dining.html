@@ -1,35 +1,34 @@
-/* Colors and navigation for all four pages */
-body {
-  background-color: #f6f3f9;
-  color: #241a30;
-}
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dining &amp; Weather | Major Hub</title>
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="dining.html" aria-current="page">Dining &amp; Weather</a>
+    <a href="planner.html">Study Planner</a>
+  </nav>
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: #392354;
-}
+  <main>
+    <h1>Dining &amp; Weather</h1>
 
-nav a {
-  color: white;
-}
+    <!-- The weather request updates this status when it finishes. -->
+    <section>
+      <h2>Current Weather in Jackson, MS</h2>
+      <p id="weather" role="status">Loading weather…</p>
+      <p>Weather data from <a href="https://open-meteo.com/">Open-Meteo</a>.</p>
+    </section>
 
-nav a[aria-current="page"] {
-  font-weight: bold;
-}
-
-main {
-  padding-block: 2rem;
-}
-
-/* Campus event cards */
-article {
-  max-width: 36rem;
-  margin-top: 1rem;
-  padding: 1rem;
-  border: 1px solid #d4c9df;
-  border-radius: 0.75rem;
-  background-color: white;
-}
+    <section>
+      <h2>Campus Dining</h2>
+      <p>Campus dining hours and menus will be added here.</p>
+    </section>
+  </main>
+</body>
+</html>
